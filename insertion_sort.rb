@@ -7,7 +7,7 @@ module InsertionSort
       self.insert(input, index, input[index])
     end
   end
-  
+
   private
   def self.insert(input, index, value)
     i = index - 1
@@ -18,8 +18,3 @@ module InsertionSort
     input[i + 1] = value
   end
 end
-
-input = 25.times.map { Random.rand(500) }
-puts "Insertion sort for the following input #{input}"
-InsertionSort.sort(input)
-puts "Input sorted #{input}"
